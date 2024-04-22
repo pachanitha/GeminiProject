@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+    <title>Gemini System</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex justify-content-between">
+          <div class="logo">
+            <h1><a href="index.html">Gemini System</a></h1>
+          </div>
+    
+          <nav id="navbar" class="navbar">
+            <ul> 
+              <li><a class="nav-link scrollto active" href="home.html">Home</a></li>
+              <li><a class="nav-link scrollto" href="create.html">Create</a></li>
+              <li><a class="nav-link scrollto" href="#services">Logout</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+        </div>
+    </header>
+    <section id="pic" class="d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+              <h1>Science Plan</h1>
+              <h2>Collect a scientific data </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <main>
+        <section id="plan" class="plan-result">
+            <div class="plan-content" data-aos="fade-up">
+              <div class="section-title">
+                <h2>Science Plans</h2>
+              </div>
+              <div class="row content">
+                <div class="col-lg-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <table class="table-custom">
+                        <thead>
+                        <tr>
+                          <th>Select</th>
+                          <th>Creator</th>
+                          <th>Submitter</th>
+                          <th>Funding (USD)</th>
+                          <th>Star System</th>
+                          <th>Start Date</th>
+                          <th>End Date</th>
+                          <th>Telescope Location</th>
+                          <th>Status</th>
+                        </tr>
+                        </thead>
+                        <tbody id="science-plans-table">
+                            <tr>
+                               <td><input type="checkbox" class="plan-select"></td>
+                               <td>Dr. Jane Smith</td>
+                               <td>Dr. Kong Smith</td>
+                               <td>1000</td>
+                               <td>Alpha Centauri</td>
+                               <td>2021-10-01</td>
+                               <td>2021-10-31</td>
+                               <td>Mauna Kea</td>
+                               <td>Approved</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="plan-select"></td>
+                                <td>Dr. Jane Smith</td>
+                                <td>Dr. Sam Smith</td>
+                                <td>500</td>
+                                <td>Beta Centauri</td>
+                                <td>2021-11-01</td>
+                                <td>2021-11-30</td>
+                                <td>Mauna Kea</td>
+                                <td>Approved</td>
+                             </tr>
+                        </tbody>
+                      </table>
+                      <div class="button-area">
+                        <button id="create-testing"><a href="create.html">Create Testing</a></button>  
+                        <div class="other-buttons">  
+                            <button id="submit-testing">Submit Testing</button>
+                            <button id="start-test">Start Test</button>
+                        </div> 
+                     </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+    </main>
+
+</body>
+</html>

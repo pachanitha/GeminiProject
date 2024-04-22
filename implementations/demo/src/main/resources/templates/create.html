@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+  <title>Gemini System</title>
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="../static/css/createstyle.css">
+</head>
+<body>
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+      <div class="logo">
+        <h1><a href="index.html">Gemini System</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="home.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="create.html">Create</a></li>
+          <li><a class="nav-link scrollto" href="#services">Logout</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="plan" class="plan-result">
+      <div class="create-content" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Create Science Plan</h2>
+        </div>
+        <form id="plan-form" action="#" method="post">
+                <div class="form">
+                  <label for="creator">Creator</label>
+                  <input type="text" class="form-control" id="creator" name="creator" required>
+                </div>
+                <div class="form">
+                  <label for="submitter">Submitter</label>
+                  <input type="text" class="form-control" id="submitter" name="submitter" required>
+                </div>
+                <div class="form">
+                  <label for="fundingInUSD">Funding (USD)</label>
+                  <input type="number" class="form-control" id="fundingInUSD" name="fundingInUSD" required>
+                </div>
+                <div class="form">
+                  <label for="objectives">Objectives</label>
+                  <textarea class="form-control" id="objectives" name="objectives" rows="4" required></textarea>
+                </div>
+                <div class="form">
+                  <label for="starSystem">Star System</label>
+                  <select class="form-control" id="starSystem" name="starSystem" required>
+                    <option value="">Select Star System</option>
+                    </select>
+                </div>
+                <div class="form">
+                  <label for="startDate">Start Date</label>
+                  <input type="text" class="form-control" id="startDate" name="startDate" required>
+                </div>
+                <div class="form">
+                  <label for="endDate">End Date</label>
+                  <input type="text" class="form-control" id="endDate" name="endDate" required>
+                </div>
+                <div class="form">
+                  <label for="telescopeLocation">Telescope Location</label>
+                  <select class="form-control" id="telescopeLocation" name="telescopeLocation" required>
+                    <option value="">Select Telescope Location</option>
+                    </select>
+                </div>
+                  <div class="form">
+                    <label for="fileType">File Type</label>
+                    <select class="form-control" id="fileType" name="dataProcRequirements[fileType]" required>
+                      <option value="">Select File Type</option>
+                      <option value="JPEG">JPEG</option>
+                      <option value="PNG">PNG</option>
+                      <option value="RAW">RAW</option>
+                    </select>
+                  </div>
+                  <div class="form">
+                    <label for="fileQuality">File Quality</label>
+                    <select class="form-control" id="fileQuality" name="dataProcRequirements[fileQuality]" required>
+                      <option value="">Select File Quality</option>
+                        <option value="Fine">Fine</option>
+                        <option value="Low">Low</option>
+                    </select>
+                  </div>
+                  <div class="form">
+                    <label for="colorType">Color Type</label>
+                    <select class="form-control" id="colorType" name="dataProcRequirements[colorType]" required>
+                      <option value="">Select Color Type</option>
+                        <option value="Color mode">Color mode</option>
+                        <option value="B&W mode">B&W mode</option>
+                    </select>
+                  </div>
+                  <div class="form">
+                    <label for="contrast">Contrast</label>
+                    <input type="text" class="form-control" id="contrast" name="dataProcRequirements[contrast]" required>
+                  </div>
+                  <div class="form">
+                    <label for="brightness">Brightness</label>
+                    <input type="text" class="form-control" id="brightness" name="dataProcRequirements[brightness]" required>
+                  </div>
+                  <div class="form">
+                    <label for="saturation">Saturation</label>
+                    <input type="text" class="form-control" id="saturation" name="dataProcRequirements[saturation]" required>
+                  </div>
+                  <div class="form">
+                    <label for="highlights">Highlights</label>
+                    <input type="text" class="form-control" id="highlights" name="dataProcRequirements[highlights]" required>
+                  </div>
+                  <div class="form">
+                    <label for="exposure">Exposure</label>
+                    <input type="text" class="form-control" id="exposure" name="dataProcRequirements[exposure]" required>
+                  </div>
+                  <div class="form">
+                    <label for="shadows">Shadows</label>
+                    <input type="text" class="form-control" id="shadows" name="dataProcRequirements[shadows]" required>
+                  </div>
+                  <div class="form">
+                    <label for="whites">Whites</label>
+                    <input type="text" class="form-control" id="whites" name="dataProcRequirements[whites]" required>
+                  </div>
+                  <div class="form">
+                    <label for="blacks">Blacks</label>
+                    <input type="text" class="form-control" id="blacks" name="dataProcRequirements[blacks]" required>
+                  </div>
+                  <div class="form">
+                    <label for="luminance">Luminance</label>
+                    <input type="text" class="form-control" id="luminance" name="dataProcRequirements[luminance]" required>
+                  </div>
+                  <div class="form">
+                    <label for="hue">Hue</label>
+                    <input type="text" class="form-control" id="hue" name="dataProcRequirements[hue]" required>
+                  </div>
+                  
+              <div class="row">
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-primary mt-3">Create Science Plan</button>
+                </div>
+              </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  
+  </body>
+  </html>
+  
